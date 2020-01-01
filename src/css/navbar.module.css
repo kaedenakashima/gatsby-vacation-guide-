@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.25rem;
+  padding: 0rem 1rem;
 }
 .logo-btn {
   background: transparent;
@@ -35,7 +35,8 @@
   color: var(--mainBlack);
   transition: var(--mainTransition);
   font-weight: bold;
-  letter-spacing: var(--mainSpacing);
+  /* letter-spacing: var(--mainSpacing); */
+  letter-spacing: 0px;
 }
 .nav-links a:hover {
   color: var(--primaryColor);
