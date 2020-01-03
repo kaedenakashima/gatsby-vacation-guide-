@@ -39,6 +39,9 @@ h6 {
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
+a{
+  text-decoration: none;
+}
 p {
   margin-bottom: 1.25rem;
 }
@@ -83,4 +86,7 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.rich {
+  background: var(--primaryColor);
 }

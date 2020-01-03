@@ -1,35 +1,32 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 const getSiteData = graphql`
-    query {
-        site{
-            siteMetadata{
-                title
-                decription
-                author
-                data{
-                age
-                }
-            }
-        }
+  query {
+    site {
+      siteMetadata {
+        title
+        decription
+        author
+      }
     }
+  }
 `
 const RegularHeader = () => {
-    return (
-        <StaticQuery 
-            query={getSiteData} 
-            render={data => {
-            console.log(data)
-            
-            return (
-                <div>
-                    <h2>title : {data.site.siteMetadata.title}</h2>
-                    <h4>author : {data.site.siteMetadata.author}</h4>
-                </div>
-            )
-        }}
-        />
-    )
+  return (
+    <StaticQuery
+      query={getSiteData}
+      render={data => {
+        console.log(data)
+
+        return (
+          <div>
+            <h2>title : {data.site.siteMetadata.title}</h2>
+            <h4>author : {data.site.siteMetadata.author}</h4>
+          </div>
+        )
+      }}
+    />
+  )
 }
 
 export default RegularHeader
