@@ -6,10 +6,10 @@ module.exports = {
     title: "VacationGuide",
     decription:
       "Explore awesome worldwide tours & discover what makes each of them uniques. Forget your daily routine & say yes to adventure",
-    author: "@kaedenakashima", 
-    twitterUsername:"@kaedenakashima",
+    author: "@KaedeNakashima", 
+    twitterUsername:"@KaedeNakashima",
     image:'/defaultBcg.jpeg',
-    siteUrl:'https://gatsby-vacation-guide.netlify.com'
+    siteUrl:'https://gatsby-vacation-guide.netlify.com/'
   },
   plugins: [
     {
